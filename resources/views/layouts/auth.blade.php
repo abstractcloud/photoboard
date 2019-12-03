@@ -12,8 +12,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-8 welcome">
-                <h3>Welcome to Photoboard project</h3>
-                <p>text</p>
+                <h3 class="center mt-10 welcome-header">Welcome to Photoboard project</h3>
+                <p class="center welcome-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="col-4 auth-form">
                 @yield('content')

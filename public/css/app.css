@@ -20801,3 +20801,12 @@ input[type=range]::-ms-thumb {
   width: 33.4%;
 }
 
+.welcome-header {
+  color: white;
+  margin-top: 250px;
+}
+
+.welcome-info {
+  color: white;
+}
+
