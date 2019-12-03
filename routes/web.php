@@ -21,6 +21,9 @@ Route::resource('gallery', 'GalleryController')->except([
     'index'
 ]);
 
+Route::get('/test/reset', function(){
+    return view('auth.passwords.reset');
+});
 
 Auth::routes();
 
