@@ -1,6 +1,6 @@
 <template>
     <div class="grid-item">
-        <img :src="getImageUrl()" alt="">
+        <img width="300px" :src="getImageUrl()" alt="">
     </div>
 </template>
 
@@ -9,9 +9,11 @@
         props: [
             'photo_data'
         ],
-        created() {
-            console.log('Photo component.', this.photo_data)
+
+        mounted() {
+            
         },
+
         methods: {
             getImageUrl () {
                 return '/uploads/' + this.photo_data.path + '/'  + this.photo_data.image;

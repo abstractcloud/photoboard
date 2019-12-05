@@ -83,6 +83,8 @@
     <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
     
     <script src="{{ asset('js/main.js') }}"></script>
+    <script>
+    </script>
 </body>
 
 </html>
