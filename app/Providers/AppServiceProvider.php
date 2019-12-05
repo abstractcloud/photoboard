@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Observers\GalleryObserver;
+use App\Models\Gallery;
 
 class AppServiceProvider extends ServiceProvider
 {
