@@ -79,12 +79,11 @@
             @yield('content')
         </main>
     </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
-    
+    <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script>
-    </script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

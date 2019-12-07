@@ -47437,7 +47437,7 @@ __webpack_require__(/*! materialize-css */ "./node_modules/materialize-css/dist/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\OSPanel\domains\photogallery\resources\js\auth.js */"./resources/js/auth.js");
+module.exports = __webpack_require__(/*! /var/www/madhatter.solutions/photoboard/resources/js/auth.js */"./resources/js/auth.js");
 
 
 /***/ })

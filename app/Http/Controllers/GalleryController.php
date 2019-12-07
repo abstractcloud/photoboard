@@ -76,9 +76,9 @@ class GalleryController extends Controller
             'user_id' => Auth::user()->id,
         ]);
         
-        Gallery::create($data);
+        $image = Gallery::create($data);
         
-        return redirect()->route('default');
+        return response()->json($image);
     }
 
     /**

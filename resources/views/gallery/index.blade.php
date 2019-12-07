@@ -3,7 +3,7 @@
 @section('content')
    <div class="container-fluid">
        <div class="row">
-           <div class="col-2">
+           <div class="col-2" style="padding: 0px">
                <profile></profile>
            </div>
            <div class="col-10">
@@ -11,10 +11,4 @@
            </div>
        </div>
    </div>
-
-   <script>
-       window.server = {};
-       window.server.csrf_token = "{{ csrf_token() }}";
-       window.server.gallery_store = "{{ route('gallery.store') }}"
-   </script>
 @endsection
