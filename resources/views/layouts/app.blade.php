@@ -83,6 +83,9 @@
     <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
     
     <script src="{{ asset('js/main.js') }}"></script>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="{{ asset('/js/client.js') }}"></script>
 </body>
 
 </html>

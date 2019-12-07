@@ -58,7 +58,6 @@ class GalleryController extends Controller
         $upload = new Upload();
         
         $data = $request->all();
-//        dd($data);
         
         $file = $request->file('image');
         
@@ -92,6 +91,14 @@ class GalleryController extends Controller
         //
     }
 
+    public function messages()
+    {
+        $name = Auth::user()->name;
+        
+        return view('gallery.messages', [
+            'name' => $name
+        ]);
+    }
     /**
      * Show the form for editing the specified resource.(Показать форму для редактирования указанного ресурса)
      *

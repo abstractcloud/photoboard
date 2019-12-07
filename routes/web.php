@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Gallery;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,18 @@ Route::get('/test/reset', function(){
     return view('auth.passwords.reset');
 });
 
+Route::get('/test/gallery', function(){
+    Gallery::create([
+        'title' => 'hello',
+        'description' => 'test',
+        'preview' => 'test',
+        'image' => 'test',
+        'path' => 'test',
+        'user_id' => 1,
+    ]);
+});
+
 Auth::routes();
 
+Route::get('/messages',  'GalleryController@messages')->name('gallery.messages');
 

@@ -22,8 +22,10 @@ class Gallery extends Model
     
     public static function getGallery($id = null)
     {
-        $userId = Auth::user()->id;
-        $gallery = Gallery::where('user_id', $userId)->get();
+        if(Auth::check()){
+            $userId = Auth::user()->id;
+            $gallery = Gallery::where('user_id', $userId)->get();
+        }
         
         if(!is_null($id)) {
             $gallery = Gallery::where('user_id', $id)->where('private', 0)->get();
